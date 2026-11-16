@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Papers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">📚 QUESTION PAPERS</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#subjects">Subjects</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1 id="subjectTitle">Examination Papers</h1>
+    <p>Explore questions and revision materials.</p>
+</section>
+
+<section class="subjects">
+    <h2>Available Question Papers</h2>
+
+    <div class="subject-grid">
+
+        <div class="subject-card">
+            <h3>Sample Paper 1</h3>
+            <p>Diploma examination practice questions.</p>
+            <a href="answers.html?paper=1">View Questions</a>
+        </div>
+
+        <div class="subject-card">
+            <h3>Sample Paper 2</h3>
+            <p>Additional revision questions.</p>
+            <a href="answers.html?paper=2">View Questions</a>
+        </div>
+
+        <div class="subject-card">
+            <h3>Sample Paper 3</h3>
+            <p>Further examination practice.</p>
+            <a href="answers.html?paper=3">View Questions</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Question Papers</p>
+</footer>
+
+<script>
+const subjects = {
+    "computer-applications": "Computer Applications",
+    "database-management": "Database Management",
+    "web-development": "Web Development",
+    "programming": "Programming",
+    "networking": "Computer Networking",
+    "software-engineering": "Software Engineering"
+};
+
+const selected = new URLSearchParams(location.search)
+    .get("subject");
+
+document.getElementById("subjectTitle").textContent =
+    subjects[selected] || "Examination Papers";
+</script>
+
+</body>
+</html>
