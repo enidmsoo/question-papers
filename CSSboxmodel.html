@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Box Model - Product Card</title>
+<style>
+  body {
+    background: white;
+    font-family: Times New Roman, serif;
+    margin: 0;
+  }
+
+  /* THIS IS THE BOX MODEL - Same as your screenshot */
+  .product-box {
+    /* 1. CONTENT - width of the text area */
+    width: 200px;
+
+    /* 2. BACKGROUND - light blue like in photo */
+    background-color: #BFE3F2;
+
+    /* 3. PADDING - space INSIDE between text and border */
+    padding: 15px;
+
+    /* 4. BORDER - black line around it */
+    border: 2px solid black;
+
+    /* 5. MARGIN - space OUTSIDE, pushes it from screen edge */
+    margin: 10px;
+    /* margin-top: 10px; margin-left: 10px; */
+  }
+
+  .product-box h3 {
+    margin: 0 0 8px 0; /* margin below heading */
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .product-box p {
+    margin: 5px 0; /* small margin between lines */
+    font-size: 13px;
+  }
+
+  .product-box button {
+    margin-top: 10px; /* margin above button */
+    padding: 2px 6px; /* padding inside button */
+    background: #f0f0f0;
+    border: 1px solid #999;
+    font-size: 11px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+  <div class="product-box">
+    <h3>Product Name</h3>
+    <p>Price: Ksh 1,500</p>
+    <p>Quality product available.</p>
+    <button>Buy Now</button>
+  </div>
+
+</body>
+</html>
